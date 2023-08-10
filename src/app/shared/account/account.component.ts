@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./account.component.css']
 })
 export class AccountComponent {
-
+  public exit(): boolean{
+    if (confirm("Deseja Sair?")){
+      return true;
+    }
+    return false;
+  }
 }

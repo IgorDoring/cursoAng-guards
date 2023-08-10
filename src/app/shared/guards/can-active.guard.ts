@@ -11,7 +11,7 @@ export class CanActiveGuard implements CanActivate {
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
   console.log(route);
   console.log(state);
-    if( route.queryParams['user'] === "Admin" && route.queryParams['password'] === "Admin"){
+    if( route.queryParams['user'] === "Admin" && route.queryParams['password'] === "1234"){
       return true;
     }
     return false;
